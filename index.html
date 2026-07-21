@@ -1,26 +1,394 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>FinAyush</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FinAyush | Finance Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:fixed;
+top:0;
+background:#0f172a;
+z-index:1000;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#38bdf8;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:28px;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 10%;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero h1 span{
+color:#38bdf8;
+}
+
+.hero h2{
+font-size:24px;
+font-weight:400;
+margin-bottom:20px;
+color:#cbd5e1;
+}
+
+.hero p{
+font-size:18px;
+line-height:1.8;
+color:#94a3b8;
+max-width:800px;
+margin:auto;
+}
+
+.buttons{
+margin-top:40px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 32px;
+background:#38bdf8;
+color:white;
+border-radius:10px;
+text-decoration:none;
+margin:10px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+background:#0ea5e9;
+}
+
+.btn-outline{
+background:transparent;
+border:2px solid #38bdf8;
+}
+
+.btn-outline:hover{
+background:#38bdf8;
+}
+
+section{
+padding:100px 8%;
+}
+
+.title{
+text-align:center;
+font-size:38px;
+margin-bottom:60px;
+color:#38bdf8;
+}
+
+</style>
 </head>
-<body style="font-family:Arial; text-align:center; margin-top:100px;">
 
-<h1>Welcome to FinAyush 🚀</h1>
+<body>
 
-<h2>Ayush Tyagi</h2>
+<header>
 
-<p>MBA (Finance)</p>
+<div class="logo">
+FinAyush
+</div>
 
-<p>Equity Research | Financial Modeling | Valuation | Market Insights</p>
+<nav>
 
-<hr>
+<a href="#home">Home</a>
 
-<h3>Coming Soon...</h3>
+<a href="#about">About</a>
 
-<p>✔ Equity Research Reports</p>
-<p>✔ DCF Models</p>
-<p>✔ Relative Valuation</p>
-<p>✔ Market Insights</p>
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Hello, I'm <span>Ayush Tyagi</span></h1>
+
+<h2>MBA (Finance) | Equity Research | Financial Modeling</h2>
+
+<p>
+
+Building investment insights through valuation,
+financial modeling and equity research.
+
+</p>
+
+<div class="buttons">
+
+<a href="#projects" class="btn">View Projects</a>
+
+<a href="resume.html" class="btn btn-outline">Resume</a>
+
+</div>
+
+</div>
+
+</section>
+<!-- ABOUT SECTION -->
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div style="max-width:900px;margin:auto;text-align:center;">
+
+<p style="font-size:18px;line-height:2;color:#cbd5e1;">
+
+Hello! I'm <b style="color:#38bdf8;">Ayush Tyagi</b>, an MBA (Finance) student at
+Graphic Era Deemed to be University.
+
+I am passionate about Equity Research,
+Financial Modeling, Company Valuation and
+Investment Analysis.
+
+Currently I am building practical finance projects
+to strengthen my analytical skills and prepare
+for a career in Equity Research and Financial Analysis.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- SKILLS SECTION -->
+
+<section>
+
+<h2 class="title">Skills</h2>
+
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+
+<div style="background:#1e293b;padding:20px 35px;border-radius:12px;">
+Financial Modeling
+</div>
+
+<div style="background:#1e293b;padding:20px 35px;border-radius:12px;">
+DCF Valuation
+</div>
+
+<div style="background:#1e293b;padding:20px 35px;border-radius:12px;">
+Relative Valuation
+</div>
+
+<div style="background:#1e293b;padding:20px 35px;border-radius:12px;">
+Equity Research
+</div>
+
+<div style="background:#1e293b;padding:20px 35px;border-radius:12px;">
+MS Excel
+</div>
+
+<div style="background:#1e293b;padding:20px 35px;border-radius:12px;">
+Power BI
+</div>
+
+<div style="background:#1e293b;padding:20px 35px;border-radius:12px;">
+Financial Statement Analysis
+</div>
+
+<div style="background:#1e293b;padding:20px 35px;border-radius:12px;">
+Investment Research
+</div>
+
+</div>
+
+</section>
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2 class="title">Featured Projects</h2>
+
+<div style="display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;">
+
+<div style="background:#1e293b;
+padding:30px;
+border-radius:15px;">
+
+<h3 style="color:#38bdf8;">
+Avenue Supermarts DCF Model
+</h3>
+
+<p style="margin:20px 0;
+color:#cbd5e1;
+line-height:1.8;">
+
+Developed a complete Discounted Cash Flow (DCF)
+valuation model for Avenue Supermarts (DMart)
+including revenue forecasting, WACC calculation,
+terminal value and intrinsic valuation.
+
+</p>
+
+<a href="#"
+style="color:#38bdf8;
+text-decoration:none;
+font-weight:bold;">
+
+Coming Soon →
+
+</a>
+
+</div>
+
+
+<div style="background:#1e293b;
+padding:30px;
+border-radius:15px;">
+
+<h3 style="color:#38bdf8;">
+Mahindra Relative Valuation
+</h3>
+
+<p style="margin:20px 0;
+color:#cbd5e1;
+line-height:1.8;">
+
+Performed Comparable Company Analysis using
+valuation multiples including
+P/E, EV/EBITDA and EV/Sales.
+
+</p>
+
+<a href="#"
+style="color:#38bdf8;
+text-decoration:none;
+font-weight:bold;">
+
+Coming Soon →
+
+</a>
+
+</div>
+
+
+<div style="background:#1e293b;
+padding:30px;
+border-radius:15px;">
+
+<h3 style="color:#38bdf8;">
+Equity Research Reports
+</h3>
+
+<p style="margin:20px 0;
+color:#cbd5e1;
+line-height:1.8;">
+
+Detailed company analysis covering business model,
+industry overview, financial performance,
+valuation and investment recommendation.
+
+</p>
+
+<a href="#"
+style="color:#38bdf8;
+text-decoration:none;
+font-weight:bold;">
+
+Coming Soon →
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="title">Contact Me</h2>
+
+<div style="text-align:center;line-height:2;font-size:18px;color:#cbd5e1;">
+
+<p><strong>Name:</strong> Ayush Tyagi</p>
+
+<p><strong>Email:</strong> ayush@example.com</p>
+
+<p><strong>LinkedIn:</strong> Coming Soon</p>
+
+<p><strong>GitHub:</strong> https://github.com/finayushio</p>
+
+<p><strong>Website:</strong> https://finayushio.github.io</p>
+
+</div>
+
+</section>
+
+
+<footer style="padding:40px;text-align:center;background:#020617;color:#94a3b8;">
+
+<p>© 2026 FinAyush. All Rights Reserved.</p>
+
+<p style="margin-top:10px;">
+
+Designed & Developed by
+<span style="color:#38bdf8;">Ayush Tyagi</span>
+
+</p>
+
+</footer>
 
 </body>
+
 </html>
